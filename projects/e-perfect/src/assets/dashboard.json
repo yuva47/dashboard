@@ -1,0 +1,91 @@
+{
+  "name": "Dashboard",
+  "cols": 6,
+  "rowHeight": 100,
+  "layout": [
+    {
+      "id": 0,
+      "x": 0,
+      "y": 0,
+      "w": 3,
+      "h": 6,
+      "component": "pie_chart",
+      "caption": "",
+      "api": "/assets/dept_wise_chart.json",
+      "options": {
+        "title": {
+          "text": "DepartmentWise ManPower",
+          "subtext": "Total ManPower {{value}}",
+          "x": "center"
+        },
+        "series": [
+          {
+            "name": "DepartmentWise ManPower",
+            "type": "pie",
+            "radius": [
+              30,
+              110
+            ],
+            "roseType": "area",
+            "data": []
+          }
+        ]
+      }
+    },
+    {
+      "id": 3,
+      "x": 3,
+      "y": 0,
+      "w": 3,
+      "h": 6,
+      "component": "bar_chart",
+      "caption": "All Job WIP > fee",
+      "api": "/assets/job_wip.json"
+    },
+    {
+      "id": 1,
+      "x": 0,
+      "y": 0,
+      "w": 3,
+      "h": 4,
+      "component": "table",
+      "caption": "Monthly WIP",
+      "api": "/assets/monthly_wip.json",
+      "columns": [
+        "sl_no",
+        "month",
+        "opening_balance",
+        "additions",
+        "wip",
+        "write_off_jc",
+        "write_off_me",
+        "closing_bal"
+      ],
+      "actions": [
+        {
+          "label": "View More",
+          "link": "/list"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "x": 3,
+      "y": 3,
+      "w": 3,
+      "h": 6,
+      "component": "table",
+      "caption": "Job WIP Ageing",
+      "api": "/assets/job_wip_ageing.json",
+      "columns": [
+        "sl_no",
+        "job_code",
+        "job_start_date",
+        "client_name",
+        "assignment_name",
+        "time_period_wise",
+        "total"
+      ]
+    }
+  ]
+}

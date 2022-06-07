@@ -1,0 +1,51 @@
+.filters {
+  position: relative;
+}
+
+.filters__gearicon {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: rgba(0, 0, 0, 0.6);
+}
+
+.position-fixed {
+  position: fixed;
+  top: 20%;
+  right: -1%;
+}
+
+.position-absolute {
+  position: absolute;
+  top: -100%;
+  right: 120%;
+}
+
+.filters__card {
+  background: linear-gradient(#222a42, #1d253b);
+  color: white;
+  transition: all 150ms linear;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1 !important;
+  transform: translate3d(0, 10px, 0) !important;
+  visibility: visible !important;
+}
+
+.filters__card--content {
+  padding-top: 1rem;
+}
+
+.arrow {
+  position: absolute;
+  width: 10px;
+  left: -20%;
+  top: 5%;
+  border-bottom: 0.6em solid transparent;
+  border-left: 0.6em solid #212941;
+  border-top: 0.6em solid transparent;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 150ms linear;
+}

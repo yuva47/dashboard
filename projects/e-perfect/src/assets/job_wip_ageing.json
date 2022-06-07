@@ -1,0 +1,20 @@
+[
+  {
+    "sl_no": 1,
+    "job_code": "1897",
+    "job_start_date": "18th Jan 2022",
+    "client_name": "TCS",
+    "assignment_name": "Robert",
+    "time_period_wise": "",
+    "total": 1000
+  },
+  {
+    "sl_no": 2,
+    "job_code": "1898",
+    "job_start_date": "18th Dec 2021",
+    "client_name": "CTS",
+    "assignment_name": "John Doe",
+    "time_period_wise": "",
+    "total": 2000
+  }
+]

@@ -1,0 +1,7 @@
+<ktd-grid [cols]="cols" [rowHeight]="rowHeight" [layout]="layout" (layoutUpdated)="onLayoutUpdated($event)">
+  <ktd-grid-item [transition]="transition" *ngFor="let item of layout; trackBy:trackById" [id]="item.id">
+    <mat-card>
+      <ng-container appDashlet [gridItem]="item"></ng-container>
+    </mat-card>
+  </ktd-grid-item>
+</ktd-grid>

@@ -1,0 +1,5 @@
+<div class="header">
+  <h4>{{gridItem.caption}}</h4>
+  <button color="warn" mat-raised-button (click)="theme= !theme ? cooltheme : ''"> Change Theme </button>
+</div>
+<div echarts [options]="options" [theme]="theme" class="demo-chart"></div>

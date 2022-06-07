@@ -1,0 +1,23 @@
+<div class="filters position-fixed darkMode">
+  <button (click)="show =!show" mat-button class="filters__gearicon">
+    <mat-icon>settings</mat-icon>
+    <div [ngClass]="{'show':show}" class="arrow"></div>
+
+  </button>
+  <mat-card [ngClass]="{'show':show}" class="filters__card position-absolute">
+    <mat-card-header class="filters__card header">
+      <mat-card-title>DashBoard Filters</mat-card-title>
+    </mat-card-header>
+    <mat-divider></mat-divider>
+    <mat-card-content class="filters__card--content">
+      <mat-form-field appearance="fill">
+        <mat-label id="white">Favorite food</mat-label>
+        <mat-select id="form-field">
+          <mat-option *ngFor="let food of [1,2,3,4]" [value]="food">
+            {{food}}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </mat-card-content>
+  </mat-card>
+</div>

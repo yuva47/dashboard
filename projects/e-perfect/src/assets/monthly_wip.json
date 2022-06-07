@@ -1,0 +1,22 @@
+[
+  {
+    "sl_no": 1,
+    "month": "Jul-19",
+    "opening_balance": "14,960",
+    "additions": "10,935",
+    "wip": 0,
+    "write_off_jc": "6,800",
+    "write_off_me": 0,
+    "closing_bal": "18,555"
+  },
+  {
+    "sl_no": 2,
+    "month": "Jun-19",
+    "opening_balance": "18,000",
+    "additions": "20,000",
+    "wip": 0,
+    "write_off_jc": "7,900",
+    "write_off_me": 0,
+    "closing_bal": "35,000"
+  }
+]
